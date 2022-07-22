@@ -1,5 +1,7 @@
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 .App-logo {
@@ -15,7 +17,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,4 +37,110 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.navbar, .footer {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navbar {
+  padding: 10px;
+}
+
+.footer {
+  padding:5px;
+  margin-top: auto;
+}
+
+.navbar > h2 {
+  color: whitesmoke;
+}
+
+.footer {
+  display: flex;
+  padding: 5px;
+}
+
+.footerMenu {
+  width: 25%;
+  /* align-items: left; */
+}
+
+.footerMenu > .menu {
+  padding: 10px;
+}
+
+.menu a {
+  padding-right: 5px;
+  color: white;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: #f1356d;
+}
+
+.copyrightCrap {
+  width: 50%;
+  padding: 5px;
+  font-size: 12px;
+  color: white;
+}
+
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.navbar h1 {
+  color: #f1356d;
+}
+.navbar .links {
+  margin-left: auto;
+}
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+  color: white;
+}
+.navbar a:hover {
+  color: #f1356d;
+  border-bottom: 1px white solid;
+}
+.content {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.closeGrounds {
+  /* background-color: #61dafb; */
+  width: 25%;
+  padding: 10px;
+}
+
+.feed {
+  /* background-color:#f1356d; */
+  width: 25%;
+  padding: 10px;
+}
+
+.contentContainer{
+  display:flex
+}
+
+.mapOptions {
+  color: gray;
+  width: 100%;
+}
+
+.MapContent{
+  display: flex;
+  flex-direction: column;
 }
